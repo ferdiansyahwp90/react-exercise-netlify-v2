@@ -1,21 +1,22 @@
-import './App.css'
-import { Routes, Route, Link } from 'react-router-dom'
-import EditPhoto from './routes/EditPhoto';
-import Home from './routes/Home';
-import Photos from './routes/Photos';
-import AddPhoto from './routes/AddPhoto';
-import NotFound from './routes/NotFound';
+import "./App.css";
+import { Routes, Route, Link } from "react-router-dom";
+import EditPhoto from "./routes/EditPhoto";
+import Home from "./routes/Home";
+import Photos from "./routes/Photos";
+import AddPhoto from "./routes/AddPhoto";
+import NotFound from "./routes/NotFound";
 
 const App = () => {
   return (
     <>
-      <div className='navbar'>
-        <div className='studentInfo'>
-          {/* TODO: answer here */}
+      <div className="navbar">
+        <div className="studentInfo">
+          <p className="studentName">Ferdiansyah Wardana Putra</p>
+          <p className="studentId">FE5094717</p>
         </div>
-        <Link to='/'>Home</Link>
-        <Link to='/photos'>My Photos</Link>
-        <Link to='/add'>Add Photo</Link>
+        <Link to="/">Home</Link>
+        <Link to="/photos">My Photos</Link>
+        <Link to="/add">Add Photo</Link>
       </div>
 
       <Routes>
